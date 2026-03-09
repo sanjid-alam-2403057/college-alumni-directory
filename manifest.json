@@ -1,1 +1,21 @@
 
+{
+  "name": "College Alumni Directory",
+  "short_name": "Alumni",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff9800",
+  "icons": [
+    {
+      "src": "images/preview.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/preview.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
