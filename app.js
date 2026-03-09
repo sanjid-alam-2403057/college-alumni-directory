@@ -508,7 +508,8 @@ window.plotAlumniOnMap = async function(data) {
                 maxWidth: 220,     
                 minWidth: 140,     
                 autoPanPaddingTopLeft: [50, 50], 
-                autoPanPaddingBottomRight: [50, 50]
+                autoPanPaddingBottomRight: [50, 50],
+                autoPan: false
             });
 
             markersGroup.addLayer(marker);
