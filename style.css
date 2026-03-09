@@ -834,18 +834,31 @@ body.dark-mode .copy-number-btn:hover { background-color: #334155; color: white;
         box-sizing: border-box;
     }
     
+    /* --- UPDATED: Fix for the 3 Stat Cards --- */
     .stats-dashboard {
         display: flex;
-        flex-direction: column; 
-        gap: 15px;
+        flex-direction: row; /* Places them side-by-side instead of stacked */
+        justify-content: space-between;
+        gap: 8px; /* Tighter gap for mobile */
         width: 100%;
-        padding: 10px;
+        padding: 10px 15px;
         box-sizing: border-box;
     }
     .stat-box {
-        width: 100%;
+        flex: 1 1 30%; /* Each box takes up about 1/3 of the screen width */
+        min-width: 0; /* Overrides the 140px desktop minimum */
+        width: auto;
+        padding: 10px 5px; /* Shrinks the padding inside the box */
         margin: 0;
         box-sizing: border-box;
+    }
+    /* Shrink the text and icons so they fit perfectly side-by-side */
+    .stat-icon { font-size: 1.4rem; margin-bottom: 2px; }
+    .stat-number { font-size: 1.2rem; }
+    .stat-label { 
+        font-size: 0.65rem; 
+        text-align: center; 
+        line-height: 1.1; 
     }
     
     #alumni-container {
@@ -859,6 +872,11 @@ body.dark-mode .copy-number-btn:hover { background-color: #334155; color: white;
         max-width: 100%; 
         margin: 10px 0;
         box-sizing: border-box;
+    }
+
+    /* --- UPDATED: Fix for Map height on Mobile --- */
+    #alumniMap {
+        height: 280px !important; /* Shrinks the map from 450px to a better mobile size */
     }
 }
 
