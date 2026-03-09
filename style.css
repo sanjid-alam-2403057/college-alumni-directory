@@ -1,1 +1,1345 @@
 
+/* Import a beautiful modern font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8; /* A softer, more premium background color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('images/school-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative; 
+}
+
+/* Now, we need to make sure the text is readable against the bright photo */
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #f59e0b; /* Amber/Gold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+header p {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #f59e0b; /* Light Silver */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#alumni-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.alumni-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    width: 240px; 
+    padding: 20px 15px; 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-top: 5px solid #004aad; 
+    position: relative;
+}
+
+/* Hover effect: makes the card lift up and cast a bigger shadow */
+.alumni-card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15); 
+}
+
+.alumni-card img {
+    width: 100px;  
+    height: 100px; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid white; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.alumni-card h2 {
+    font-size: 1.2rem; 
+    margin: 0 0 10px;
+    color: #1a1a1a;
+}
+
+.alumni-card p {
+    color: #444;
+    margin: 6px 0;
+    font-size: 0.85rem; 
+    line-height: 1.3;
+}
+
+/* Makes the labels (University, Department, etc.) stand out */
+.alumni-card strong {
+    color: #004aad; 
+    font-weight: 600;
+}
+
+/* Search Bar Styling */
+.search-container {
+    margin-top: 25px;
+}
+
+#searchInput {
+    width: 90%;
+    max-width: 450px;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Badge Styling for HSC Batch */
+.badge {
+    background-color: #e0f2fe; 
+    color: #0369a1; 
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+/* --- NEW FEATURES STYLING --- */
+
+/* Join Button Pinned to Top Right */
+.join-btn {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    background-color: #f59e0b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.join-btn:hover {
+    background-color: #d97706;
+    transform: translateY(-2px);
+}
+
+.join-icon {
+    width: 18px;
+    height: 18px;
+    fill: white; 
+}
+
+@media (max-width: 600px) {
+    .join-btn {
+        position: static;
+        display: inline-flex;
+        margin-bottom: 25px;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1f2937; 
+    color: #d1d5db;
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 50px;
+    border-top: 4px solid #004aad; 
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+/* Sort Buttons Styling */
+.sort-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* --- UPDATED SORT BUTTONS --- */
+.sort-btn {
+    background-color: rgba(15, 23, 42, 0.85); 
+    color: #ffffff; 
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    padding: 10px 20px;
+    border-radius: 25px; 
+    font-size: 0.95rem;
+    font-weight: 700; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+.sort-btn:hover {
+    background-color: #ffffff;
+    color: #0f172a;
+    border-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px); 
+}
+
+/* --- DARK MODE BUTTON STYLING --- */
+.dark-mode-btn {
+    position: absolute;
+    top: 25px;
+    right: 180px; 
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.2s;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.dark-mode-btn:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .dark-mode-btn {
+        position: static;
+        display: inline-block;
+        margin-bottom: 25px;
+        margin-right: 10px;
+    }
+}
+
+/* --- THE DARK MODE THEME --- */
+body.dark-mode {
+    background-color: #111827 !important; 
+    color: #f3f4f6 !important; 
+}
+
+body.dark-mode .alumni-card {
+    background: #1f2937 !important; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4) !important;
+    border-top: 5px solid #3b82f6 !important; 
+}
+
+body.dark-mode .alumni-card h2 { color: #f9fafb !important; }
+body.dark-mode .alumni-card p { color: #d1d5db !important; }
+body.dark-mode .alumni-card strong { color: #60a5fa !important; }
+body.dark-mode .alumni-card img { border-color: #1f2937 !important; }
+
+body.dark-mode .badge { 
+    background-color: #374151 !important; 
+    color: #93c5fd !important; 
+}
+
+body.dark-mode footer { 
+    background-color: #0f172a !important; 
+    border-top: 4px solid #3b82f6 !important; 
+}
+
+/* --- SCROLL TO TOP BUTTON --- */
+.scroll-top-btn {
+    display: none; 
+    position: fixed; 
+    bottom: 30px;
+    right: 30px;
+    z-index: 99; 
+    font-size: 1.2rem;
+    border: none;
+    background-color: #004aad; 
+    color: white;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.scroll-top-btn:hover {
+    background-color: #003073;
+    transform: translateY(-3px); 
+}
+
+body.dark-mode .scroll-top-btn { background-color: #3b82f6; }
+body.dark-mode .scroll-top-btn:hover { background-color: #2563eb; }
+
+/* --- WHATSAPP BUTTON --- */
+.whatsapp-btn {
+    background-color: #25D366; 
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E; 
+    transform: translateY(-2px);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    flex-wrap: wrap;
+}
+
+/* --- EMAIL BUTTON --- */
+.contact-btn {
+    background-color: #004aad; 
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.contact-btn:hover {
+    background-color: #003073; 
+    transform: translateY(-2px);
+}
+
+body.dark-mode .contact-btn { background-color: #3b82f6; }
+body.dark-mode .contact-btn:hover { background-color: #2563eb; }
+
+/* --- DESKTOP NOTICE BANNER --- */
+.desktop-notice {
+    background-color: #f59e0b; 
+    color: #fff;
+    text-align: center;
+    padding: 10px 40px 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.desktop-notice p { margin: 0; }
+
+.close-notice-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    line-height: 1;
+    padding: 0;
+}
+
+body.dark-mode .desktop-notice { background-color: #b45309; }
+
+@media (min-width: 769px) {
+    .desktop-notice { display: none !important; }
+}
+
+/* --- LIVE DASHBOARD STATS BAR --- */
+.stats-dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 140px;
+    transition: transform 0.3s;
+}
+
+.stat-box:hover { transform: translateY(-5px); }
+
+.stat-icon {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #004aad; 
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+body.dark-mode .stat-box {
+    background-color: #1e293b;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .stat-number { color: #3b82f6; }
+body.dark-mode .stat-label { color: #cbd5e1; }
+
+/* --- OPEN TO MENTORING BADGE --- */
+.mentoring-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(37, 211, 102, 0.1); 
+    color: #128C7E; 
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid rgba(37, 211, 102, 0.4);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.glow-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #25D366;
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); box-shadow: 0 0 4px #25D366; opacity: 0.8; }
+    100% { transform: scale(1.2); box-shadow: 0 0 12px #25D366; opacity: 1; }
+}
+
+body.dark-mode .mentoring-badge {
+    background-color: rgba(37, 211, 102, 0.15);
+    color: #25D366;
+    border-color: #25D366;
+}
+
+/* --- SKELETON LOADING ANIMATION --- */
+.skeleton-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skeleton-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    margin-bottom: 12px;
+    animation: shimmer 1.5s infinite linear;
+}
+
+.skeleton-text {
+    height: 12px;
+    background: #e2e8f0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 80%;
+    animation: shimmer 1.5s infinite linear;
+}
+
+.skeleton-text.title {
+    width: 60%;
+    height: 18px;
+    margin-bottom: 15px;
+}
+
+@keyframes shimmer {
+    0% { background-color: #e2e8f0; }
+    50% { background-color: #cbd5e1; }
+    100% { background-color: #e2e8f0; }
+}
+
+body.dark-mode .skeleton-img,
+body.dark-mode .skeleton-text {
+    background: #374151;
+    animation: shimmer-dark 1.5s infinite linear;
+}
+
+@keyframes shimmer-dark {
+    0% { background-color: #374151; }
+    50% { background-color: #4b5563; }
+    100% { background-color: #374151; }
+}
+
+/* --- QUICK SHARE BUTTON --- */
+.share-btn {
+    background-color: #f3f4f6;
+    color: #4b5563;
+    border: 1px solid #d1d5db;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+body.dark-mode .share-btn {
+    background-color: #374151;
+    color: #d1d5db;
+    border-color: #4b5563;
+}
+
+body.dark-mode .share-btn:hover {
+    background-color: #4b5563;
+    color: #fff;
+}
+
+/* --- NEW ARRIVAL BADGE --- */
+.new-badge {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(239, 68, 68, 0.4);
+    z-index: 10;
+    transform: rotate(-10deg);
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+    100% { transform: scale(1) rotate(-10deg); opacity: 1; }
+}
+
+/* --- LOAD MORE BUTTON --- */
+.load-more-container {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.load-more-btn {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    display: inline-block; 
+}
+
+.load-more-btn:hover {
+    background-color: #003073;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .load-more-btn { background-color: #3b82f6; }
+body.dark-mode .load-more-btn:hover { background-color: #2563eb; }
+
+/* --- PUBLIC UNIVERSITY TAG --- */
+.public-badge {
+    display: inline-block;
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-left: 6px;
+    vertical-align: middle;
+    border: 1px solid #bfdbfe;
+}
+
+body.dark-mode .public-badge {
+    background-color: #1e3a8a;
+    color: #93c5fd;
+    border-color: #1e40af;
+}
+
+/* --- VIP DEVELOPER CARD --- */
+.developer-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #FFD700, #F5A623); 
+    color: #0f172a;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.developer-card {
+    border: 2px solid #FFD700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+body.dark-mode .developer-card {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+/* --- ADVANCED DROPDOWN FILTERS --- */
+.dropdown-filter {
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(15, 23, 42, 0.2);
+    background-color: #ffffff;
+    color: #0f172a;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.dropdown-filter:hover, .dropdown-filter:focus {
+    border-color: #004aad;
+    box-shadow: 0 4px 8px rgba(0, 74, 173, 0.2);
+}
+
+body.dark-mode .dropdown-filter {
+    background-color: #1e293b;
+    color: #ffffff;
+    border-color: rgba(255,255,255,0.2);
+}
+
+/* --- BKASH/NAGAD SUPPORT BUTTON & MODAL --- */
+.support-dev-container { margin-top: 15px; }
+
+.support-btn {
+    background-color: #10b981; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.support-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.payment-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2000;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    align-items: center; 
+    justify-content: center;
+}
+
+.payment-modal-content {
+    background-color: white; 
+    padding: 30px; 
+    border-radius: 20px;
+    width: 90%; 
+    max-width: 400px; 
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: popIn 0.3s ease-out;
+}
+
+body.dark-mode .payment-modal-content { 
+    background-color: #1e293b; 
+    color: #f8fafc; 
+}
+
+.close-payment-btn {
+    position: absolute; right: 20px; top: 15px;
+    font-size: 28px; cursor: pointer; color: #94a3b8;
+    transition: color 0.2s;
+}
+
+.close-payment-btn:hover { color: #ef4444; }
+
+.payment-card {
+    margin: 15px 0; padding: 15px; border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    background-color: #f8fafc;
+}
+
+body.dark-mode .payment-card {
+    background-color: #0f172a;
+    border-color: #334155;
+}
+
+.bkash-card { border-top: 4px solid #e2136e; } 
+.nagad-card { border-top: 4px solid #f7931e; } 
+
+.phone-number { 
+    font-size: 1.4rem; 
+    font-weight: bold; 
+    margin: 10px 0; 
+    letter-spacing: 1px; 
+    color: #0f172a;
+}
+
+body.dark-mode .phone-number { color: #f8fafc; }
+
+.copy-number-btn {
+    background-color: transparent;
+    border: 1px solid #cbd5e1;
+    padding: 6px 15px; 
+    border-radius: 15px; 
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+    color: #475569;
+}
+
+body.dark-mode .copy-number-btn { color: #cbd5e1; border-color: #475569;}
+.copy-number-btn:hover { background-color: #e2e8f0; color: #0f172a; }
+body.dark-mode .copy-number-btn:hover { background-color: #334155; color: white;}
+
+/* =========================================
+   💻 TABLET & SMALL DESKTOP RESPONSIVE FIXES
+   ========================================= */
+@media screen and (max-width: 1100px) {
+    .sort-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .sort-container button,
+    .sort-container select {
+        flex: 1 1 auto; 
+        min-width: 150px; 
+    }
+
+    .stats-dashboard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/* =========================================
+   📱 MOBILE RESPONSIVE DESIGN FIXES
+   ========================================= */
+@media screen and (max-width: 768px) {
+    header { padding: 20px 15px; }
+    header h1 {
+        font-size: 1.8rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    }
+    header p {
+        font-size: 1rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+    
+    .search-container {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .search-container input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .sort-container {
+        display: flex;
+        flex-direction: column; 
+        gap: 10px;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .sort-container button,
+    .sort-container select {
+        width: 100%;
+        margin: 0; 
+        box-sizing: border-box;
+    }
+    
+    .stats-dashboard {
+        display: flex;
+        flex-direction: column; 
+        gap: 15px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .stat-box {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    #alumni-container {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .alumni-card {
+        width: 100%;
+        max-width: 100%; 
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+}
+
+/* =========================================
+   🔄 LOADING SPINNER
+   ========================================= */
+.spinner {
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #ff9800; 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 40px auto; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* =========================================
+   🌍 INTERACTIVE MAP STYLING (PATCHED 🚀)
+   ========================================= */
+.map-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.map-container h2 {
+    font-size: 1.5rem;
+    color: #0f172a;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body.dark-mode .map-container h2 {
+    color: #f8fafc;
+}
+
+#alumniMap {
+    height: 450px; 
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border: 4px solid white;
+    z-index: 1; 
+}
+
+body.dark-mode #alumniMap {
+    border-color: #1e293b;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Removes the default background block from our custom Leaflet icons */
+.custom-profile-pin {
+    background: transparent;
+    border: none;
+}
+
+/* 🌙 Magic Dark Mode Map Inversion */
+/* ONLY targeting .leaflet-tile-pane now, which ignores the photos! */
+body.dark-mode .leaflet-tile-pane {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+    transition: filter 0.3s ease;
+}
+
+/* Invert the plus/minus zoom buttons too */
+body.dark-mode .leaflet-control-zoom-in,
+body.dark-mode .leaflet-control-zoom-out,
+body.dark-mode .leaflet-control-attribution {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+/* Dark mode styling for the popup bubble */
+body.dark-mode .leaflet-popup-content-wrapper,
+body.dark-mode .leaflet-popup-tip {
+    background-color: #1e293b;
+    color: #e2e8f0;
+}
+body.dark-mode .leaflet-popup-content strong {
+    color: #38bdf8 !important;
+}
+body.dark-mode .leaflet-popup-content span {
+    color: #cbd5e1 !important;
+}
+/* =========================================
+   CLEANED UP ALUMNI CARD CSS
+========================================= */
+
+/* Alert Messages */
+.error-msg { text-align: center; color: red; width: 100%; font-weight: 500; }
+.empty-msg { text-align: center; color: #666; width: 100%; font-style: italic; }
+
+/* Call Button Styling */
+.call-btn {
+    background-color: #059669;
+    color: white;
+    border-color: #059669;
+}
+.call-btn:hover {
+    background-color: #047857;
+    border-color: #047857;
+}
+
+/* Share & Digital ID Buttons (with No-Wrap fix!) */
+.card-action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-share, .btn-digital-id {
+    flex: 1;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap; /* Prevents button text squishing! */
+    transition: all 0.2s ease;
+}
+
+.btn-share {
+    background-color: #ffffff;
+    color: #004aad;
+    border: 2px solid #004aad;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.btn-share:hover {
+    background-color: #f0f8ff;
+}
+
+.btn-digital-id {
+    background-color: #10b981;
+    color: white;
+    border: 2px solid #10b981;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.btn-digital-id:hover {
+    background-color: #059669;
+    border-color: #059669;
+}
+
+/* Success State (Used briefly by Javascript when clicking Share/Download) */
+.btn-success-state {
+    background-color: #25D366 !important;
+    color: white !important;
+    border-color: #25D366 !important;
+}
+
+/* Public Filter Active State */
+.active-filter {
+    background-color: #004aad !important;
+    color: white !important;
+}
+
+/* =========================================
+   CLEANED UP MAP CSS
+========================================= */
+
+/* Map Loading Overlay */
+.map-loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    border-radius: inherit;
+    transition: opacity 0.3s ease;
+}
+
+.map-spinner {
+    width: 35px;
+    height: 35px;
+    border: 4px solid #e2e8f0;
+    border-top: 4px solid #004aad;
+    border-radius: 50%;
+    animation: mapSpin 1s linear infinite;
+}
+
+.map-overlay-text {
+    margin-left: 12px;
+    font-weight: 600;
+    color: #004aad;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    text-shadow: 0px 0px 5px white;
+}
+
+@keyframes mapSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Custom Profile Pin (Snapchat style) */
+.pin-img-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    position: relative;
+}
+.pin-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pin-needle {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid;
+    margin: 0 auto;
+}
+
+/* Map Popups (Mobile Optimized) */
+.map-popup-container {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 100%;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.map-popup-container.dev-popup {
+    border-top: 4px solid #FFD700;
+    border-radius: 8px;
+    padding: 8px;
+}
+.map-popup-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid;
+    margin-bottom: 5px;
+}
+.map-popup-name {
+    font-size: 1.1rem;
+    display: block;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+.map-popup-dev-badge {
+    background: #FFD700;
+    color: #000;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+}
+.map-popup-uni {
+    font-size: 0.85rem;
+    color: #555;
+    display: block;
+    margin-bottom: 4px;
+}
+.map-popup-batch {
+    font-size: 0.75rem;
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 2px 6px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.qr-code-box {
+    background: white;
+    padding: 4px; /* Reduced padding for the smaller QR code */
+    border-radius: 6px;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* =========================================
+   📸 GLOBAL MEMORY GALLERY BUTTON
+   ========================================= */
+.gallery-action-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-global-vault {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 30px; /* Pill shape, very Android-friendly */
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+    width: 100%; 
+    max-width: 350px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-global-vault:active {
+    transform: scale(0.96); /* Satisfying physical tap effect */
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+}
+
+body.dark-mode .btn-global-vault {
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.2);
+}
+/* =========================================
+   HEADER ACTION BUTTONS (Anti-Overlap Fix)
+   ========================================= */
+.top-right-actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Space between buttons */
+    z-index: 1000;
+}
+
+/* Override old absolute positioning so they sit side-by-side */
+.top-right-actions .dark-mode-btn,
+.top-right-actions .join-btn,
+.top-right-actions .memory-btn {
+    position: relative; 
+    top: auto;
+    right: auto;
+    margin: 0;
+}
+
+/* Style for the new Gallery button */
+.memory-btn {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.memory-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(245, 158, 11, 0.4);
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 650px) {
+    .top-right-actions {
+        top: 10px;
+        right: 10px;
+        gap: 6px; /* Tighter gap on phones */
+    }
+
+    /* Shrink the buttons slightly so they fit Android screens perfectly */
+    .top-right-actions .join-btn,
+    .top-right-actions .memory-btn {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+    
+    .top-right-actions .dark-mode-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
+    
+    /* Optional: If it's STILL too cramped on very small phones, hide the text and just show icons */
+    @media (max-width: 450px) {
+        .top-right-actions .btn-text {
+            display: none; 
+        }
+        .top-right-actions .join-btn,
+        .top-right-actions .memory-btn {
+            border-radius: 50%;
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+        }
+        .top-right-actions .join-icon {
+            margin-right: 0;
+        }
+    }
+}
+/* =========================================
+   MEMORY VAULT GALLERY STYLES
+   ========================================= */
+.vault-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 60vh; /* Keeps the modal from getting too tall */
+    overflow-y: auto; /* Adds a scrollbar if there are many memories */
+    padding-right: 10px;
+}
+
+.memory-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* --- Find this in your style.css --- */
+.memory-img {
+    width: 100%;
+    max-height: 250px;
+    /* object-fit: cover; */ /* ❌ CHANGE THIS LINE... */
+    object-fit: contain;      /* ✅ TO THIS LINE! */
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background-color: #e2e8f0;
+}
+
+.memory-text {
+    font-style: italic;
+    color: #334155;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.memory-author {
+    font-weight: bold;
+    color: #f59e0b;
+    font-size: 0.9rem;
+    display: block;
+    text-align: right;
+}
+/* --- Memory Vault Submit Button --- */
+.vault-submit-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+
+.btn-submit-memory {
+    background-color: #28a745; /* A nice "success" green color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-submit-memory:hover {
+    background-color: #218838;
+    color: white;
+    transform: translateY(-2px); /* Slight lift effect when hovering */
+}
