@@ -1,20 +1,6 @@
 
 [
-  {
-  "name": "Sanjid Alam",
-  "university": "RUET",
-  "department": "CSE",
-  "admissionYear": 2025,
-  "hscBatch": 2024,
-  "photo": "images/sanjid.jpg",
-  "emailUser": "sanjid01863",
-  "emailDomain": "gmail.com",
-  "whatsappCode": "880",
-  "whatsappNum": "1863232179",
-  "location": "Rajshahi",
-  "mentoring": false,
-  "isPublic": true
-},
+  
   {
     "name": "Abdul Maleque Shuvo",
     "university": "European University Of Bangladesh",
