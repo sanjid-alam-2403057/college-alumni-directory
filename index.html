@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Alumni Directory</title>
+    <title>Sonar Bangla College Alumni Directory</title>
     
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sanjid-alam-2403057.github.io/college-alumni-directory/">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
     
-    <link rel="stylesheet" href="style.css?v=19">
+    <link rel="stylesheet" href="style.css?v=20">
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HTQTMHRD1"></script>
     <script>
@@ -37,37 +37,37 @@
         <p>Connecting past students with the future.</p>
         
         <div class="top-right-actions">
-            <button id="darkModeToggle" class="dark-mode-btn" title="Toggle Dark Mode">🌙</button>
+            <button id="darkModeToggle" class="dark-mode-btn" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">🌙</button>
             
             <button id="openGlobalVaultBtn" class="memory-btn" title="Open Memory Vault">
                 📸 <span class="btn-text">Gallery</span>
             </button>
             
-            <a href="https://forms.gle/1peVne3obTiSnTV27" target="_blank" class="join-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="join-icon">
+            <a href="https://forms.gle/1peVne3obTiSnTV27" target="_blank" class="join-btn" aria-label="Add Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="join-icon" fill="currentColor">
                     <path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/>
                 </svg>
                 <span class="btn-text">Add Profile</span>
             </a>
         </div>
         
-        <div class="search-container">
+        <section class="search-container">
             <input type="text" id="searchInput" placeholder="Search by name, institution, or batch...">
-        </div>
+        </section>
 
-        <div class="sort-container">
+        <section class="sort-container">
             <button id="sortName" class="sort-btn">Sort A-Z</button>
             <button id="sortBatch" class="sort-btn">Newest Batch</button>
             <button id="filterPublic" class="sort-btn">🏛️ Public Only</button>
             
-            <select id="universityFilter" class="dropdown-filter">
+            <select id="universityFilter" class="dropdown-filter" aria-label="Filter by Institution">
                 <option value="">🏫 All Institutions</option>
             </select>
             
-            <select id="batchFilter" class="dropdown-filter">
+            <select id="batchFilter" class="dropdown-filter" aria-label="Filter by Batch">
                 <option value="">📅 All Batches</option>
             </select>
-        </div>
+        </section>
 
         <div id="stats-dashboard" class="stats-dashboard">
             <div class="stat-box">
@@ -90,10 +90,10 @@
     
     <div id="loadingSpinner" class="spinner"></div>
     
-    <div class="map-container">
+    <section class="map-container">
         <h2>📍 Where Are Our Alumni Now?</h2>
         <div id="alumniMap"></div>
-    </div>
+    </section>
 
     <main id="alumni-container">
         <div class="alumni-card skeleton-card">
@@ -122,8 +122,8 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2026 College Alumni Directory. All rights reserved.</p>
-            <p>Developed by<strong> Sanjid Alam </strong><br>
+            <p>&copy; 2026 Sonar Bangla College Alumni Directory. All rights reserved.</p>
+            <p>Developed by <strong>Sanjid Alam</strong><br>
             Department of CSE, RUET</p>
             
             <div class="support-dev-container">
@@ -180,11 +180,11 @@
         </div>
     </div>
 
-    <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="app.js"></script>
     
-    <div id="id-card-template" style="position: absolute; left: -9999px; top: -9999px; width: 320px; height: 500px; background: linear-gradient(135deg, #0a2540, #173d6b); color: white; border-radius: 16px; font-family: 'Poppins', sans-serif; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); overflow: hidden; z-index: -1;">
+    <div id="id-card-template" style="position: fixed; left: -9999px; top: 0; width: 320px; height: 500px; background: linear-gradient(135deg, #0a2540, #173d6b); color: white; border-radius: 16px; font-family: 'Poppins', sans-serif; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); overflow: hidden;">
         
         <div style="position: absolute; top: -50px; left: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 1;"></div>
         <div style="position: absolute; bottom: -80px; right: -50px; width: 250px; height: 250px; background: rgba(255,215,0,0.03); border-radius: 50%; z-index: 1;"></div>
@@ -195,7 +195,7 @@
 
         <div style="width: 125px; height: 125px; margin: 25px auto 15px; border-radius: 50%; background: linear-gradient(135deg, #FFD700, #FDB931); padding: 4px; position: relative; z-index: 2; box-shadow: 0 8px 15px rgba(0,0,0,0.3); display: flex; justify-content: center; align-items: center;">
             <div style="background: white; border-radius: 50%; padding: 3px; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; box-sizing: border-box;">
-                <img id="id-card-photo" src="" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;" crossorigin="anonymous">
+                <img id="id-card-photo" src="" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;" crossorigin="anonymous" alt="Alumnus Photo">
             </div>
         </div>
 
@@ -203,25 +203,18 @@
         <p id="id-card-dept" style="margin: 0 0 25px; font-size: 0.85rem; color: #e2e8f0; position: relative; z-index: 2; padding: 0 15px;">Department Name</p>
 
         <div style="background: white; color: #0a2540; border-radius: 12px; padding: 15px; margin: 0 20px; position: relative; z-index: 2; box-shadow: 0 10px 20px rgba(0,0,0,0.2); text-align: left; min-height: 100px;">
-            
             <p id="id-card-uni" style="margin: 0 0 12px; font-weight: 800; font-size: 0.75rem; color: #004aad; line-height: 1.3; text-transform: uppercase; padding-right: 10px;">Institution Name</p>
-            
             <div style="background: #f1f5f9; padding: 8px 12px; border-radius: 6px; max-width: 65%; border: 1px solid #e2e8f0; display: flex; flex-direction: column; gap: 4px;">
-                
                 <div style="display: flex; align-items: center; gap: 6px;">
                     <span style="font-weight: 700; font-size: 0.75rem; color: #475569;">HSC Batch:</span>
                     <span id="id-card-batch" style="color: #e63946; font-weight: 800; font-size: 0.85rem;">20XX</span>
                 </div>
-                
                 <div style="display: flex; align-items: center; gap: 6px;">
                     <span style="font-weight: 700; font-size: 0.75rem; color: #475569;">Admission:</span>
                     <span id="id-card-admitted" style="color: #0f172a; font-weight: 800; font-size: 0.85rem;">20XX</span>
                 </div>
-
             </div>
-
             <div id="id-card-qrcode" style="position: absolute; bottom: 15px; right: 15px; background: white; border: 1px solid #e2e8f0; padding: 2px; border-radius: 6px; width: 45px; height: 45px; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);"></div>
-            
         </div>
 
         <div style="position: absolute; bottom: 12px; left: 0; width: 100%; font-size: 0.65rem; color: rgba(255,255,255,0.6); font-weight: 300; letter-spacing: 1px;">
