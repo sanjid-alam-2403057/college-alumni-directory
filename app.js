@@ -372,12 +372,28 @@ window.copyPaymentNumber = function(number, buttonElement) {
 };
 
 // --- PWA SERVICE WORKER REGISTRATION ---
+// ==========================================
+// 💣 NUCLEAR CACHE KILLER (Replaces old Service Worker)
+// ==========================================
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js')
-            .then(reg => console.log('Service Worker Registered!', reg))
-            .catch(err => console.error('Service Worker Registration Failed!', err));
+    // 1. Unregister all stuck Service Workers
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for (let registration of registrations) {
+            registration.unregister().then(function(boolean) {
+                console.log("Old Service Worker destroyed.");
+            });
+        }
     });
+
+    // 2. Wipe the Cache Storage API clean
+    if ('caches' in window) {
+        caches.keys().then(function(names) {
+            for (let name of names) {
+                caches.delete(name);
+                console.log("Old cache deleted: " + name);
+            }
+        });
+    }
 }
 
 // ==========================================
