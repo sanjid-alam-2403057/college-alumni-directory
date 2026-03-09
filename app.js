@@ -19,10 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
     let isPublicFilterActive = false; 
 
     // --- BULLETPROOF FETCH WITH CACHE-BUSTER ---
-    // Add a timestamp to the URL so mobile phones NEVER cache the data.json file!
     const cacheBuster = new Date().getTime();
 
-    fetch(`data.json?v=${cacheBuster}`)
+    // 🟢 FIX 1: Added strict cache-control headers to bypass the Service Worker
+    fetch(`data.json?v=${cacheBuster}`, { 
+        cache: "no-store",
+        headers: {
+            'Cache-Control': 'no-cache',
+            'Pragma': 'no-cache'
+        }
+    })
         .then(response => {
             if (!response.ok) {
                 throw new Error("Could not find data.json");
@@ -30,8 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then(data => {
-            // THIS IS WHAT WAS MISSING! 
-            // We need to save the data, hide the spinner, and draw the cards.
             alumniData = data;
             currentDisplayData = [...alumniData];
             
@@ -39,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if(spinner) spinner.style.display = 'none';
             
             populateDropdowns(alumniData);
-            displayAlumni(currentDisplayData);
+            displayAlumni(currentDisplayData, false); // initial load is not appending
             updateDashboard(alumniData);
             
             // Give the map a moment to load before plotting points
@@ -50,14 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 500);
         })
         .catch(error => {
-            // THE SAFETY NET: If data.json has a typo, catch it here!
             console.error("🚨 CRITICAL ERROR in data.json:", error);
             
-            // Hide the loading spinner if you have one
             const spinner = document.getElementById('loadingSpinner');
             if (spinner) spinner.style.display = 'none';
 
-            // Show a friendly message inside the main container instead of a blank screen
             if (container) {
                 container.innerHTML = `
                     <div style="text-align: center; padding: 50px; width: 100%;">
@@ -93,17 +94,26 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function displayAlumni(data) {
+    // 🟢 FIX 2: Added "isAppending" logic and DocumentFragment for blazing fast rendering
+    function displayAlumni(data, isAppending = false) {
         if (!container) return; 
-        container.innerHTML = ""; 
 
-        if (data.length === 0) {
-            container.innerHTML = "<p class='empty-msg'>No alumni found matching your criteria.</p>";
-            if(loadMoreBtn) loadMoreBtn.style.display = "none"; 
-            return;
+        // Only clear the container if we are filtering or sorting (NOT loading more)
+        if (!isAppending) {
+            container.innerHTML = ""; 
+            if (data.length === 0) {
+                container.innerHTML = "<p class='empty-msg'>No alumni found matching your criteria.</p>";
+                if(loadMoreBtn) loadMoreBtn.style.display = "none"; 
+                return;
+            }
         }
 
-        const dataToShow = data.slice(0, currentlyShowing);
+        // Figure out which slice of data to show
+        const startIndex = isAppending ? currentlyShowing - itemsPerPage : 0;
+        const dataToShow = data.slice(startIndex, currentlyShowing);
+
+        // Smart DOM Batching - builds all cards in memory first to prevent mobile lag
+        const fragment = document.createDocumentFragment();
 
         dataToShow.forEach(alumnus => {
             const card = document.createElement("div");
@@ -156,11 +166,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             `;
 
-            // --- FINAL HTML CONSTRUCTION ---
+            // 🟢 FIX 3: Added loading="lazy" to the <img> tag
             card.innerHTML = `
                 ${newArrivalBadge}
                 ${mentoringBadge}
-                <img src="${alumnus.photo}" alt="Photo of ${alumnus.name}" onerror="this.src='images/default-avatar.png'">
+                <img src="${alumnus.photo}" alt="Photo of ${alumnus.name}" loading="lazy" onerror="this.src='images/default-avatar.png'">
                 <h2>${alumnus.name}</h2>
                 ${developerBadge}
                 <p><strong>Institution:</strong> ${institutionValue} ${publicTag}</p>
@@ -176,8 +186,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 ${actionButtons} 
             `;
 
-            container.appendChild(card);
+            fragment.appendChild(card);
         });
+
+        container.appendChild(fragment); // Appends everything at once smoothly
 
         if (loadMoreBtn) {
             if (currentlyShowing < data.length) {
@@ -188,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // The Master Filter! Handles search bar AND dropdowns together.
+    // The Master Filter!
     function applyFilters() {
         const searchString = searchInput ? searchInput.value.toLowerCase() : "";
         const selectedUni = universityFilter ? universityFilter.value : "";
@@ -209,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         currentlyShowing = itemsPerPage; 
-        displayAlumni(currentDisplayData); 
+        displayAlumni(currentDisplayData, false); // Filter changes mean we reset and don't append
         
         if(typeof window.plotAlumniOnMap === 'function') {
             window.plotAlumniOnMap(currentDisplayData); 
@@ -232,7 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (loadMoreBtn) {
         loadMoreBtn.addEventListener("click", () => {
             currentlyShowing += itemsPerPage; 
-            displayAlumni(currentDisplayData); 
+            displayAlumni(currentDisplayData, true); // 🟢 FIX 4: true means we APPEND instead of reset!
         });
     }
 
@@ -240,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
         sortNameBtn.addEventListener("click", () => {
             currentDisplayData.sort((a, b) => a.name.localeCompare(b.name));
             currentlyShowing = itemsPerPage; 
-            displayAlumni(currentDisplayData);
+            displayAlumni(currentDisplayData, false);
         });
     }
 
@@ -248,7 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
         sortBatchBtn.addEventListener("click", () => {
             currentDisplayData.sort((a, b) => b.hscBatch - a.hscBatch);
             currentlyShowing = itemsPerPage; 
-            displayAlumni(currentDisplayData);
+            displayAlumni(currentDisplayData, false);
         });
     }
 
@@ -596,26 +608,21 @@ const openGlobalVaultBtn = document.getElementById('openGlobalVaultBtn');
 const closeVaultModal = document.getElementById('closeVaultModal');
 const vaultGallery = document.getElementById('vaultGallery');
 
-// Your Google Apps Script Web App URL
 const MEMORY_API_URL = "https://script.google.com/macros/s/AKfycbz4avBwCQ3N4twDBZazuyUvinTz0am9eyr8IcGGkPlm84v1ILNSL5lAQd3qlwRYuO_w/exec";
-let memoriesLoaded = false; // Prevents loading twice if they close and reopen the modal
+let memoriesLoaded = false; 
 
 if (openGlobalVaultBtn) {
     openGlobalVaultBtn.addEventListener('click', () => {
         memoryVaultModal.style.display = 'flex'; 
         
-        // If we haven't loaded the memories yet, fetch them from Google Sheets!
         if (!memoriesLoaded) {
             vaultGallery.innerHTML = "<p style='text-align: center; padding: 20px;'>⏳ Loading memories...</p>";
             
             fetch(MEMORY_API_URL)
                 .then(response => response.json())
                 .then(data => {
-                    console.log("Data received from Google Sheets:", data); // Check the console log to see your data structure
+                    vaultGallery.innerHTML = ""; 
                     
-                    vaultGallery.innerHTML = ""; // Clear the loading text
-                    
-                    // Safely extract the array
                     let memoryArray = [];
                     if (Array.isArray(data)) {
                         memoryArray = data;
@@ -624,7 +631,6 @@ if (openGlobalVaultBtn) {
                     } else if (data && Array.isArray(data.items)) {
                         memoryArray = data.items;
                     } else {
-                        console.error("Expected an array but got something else:", data);
                         vaultGallery.innerHTML = "<p style='text-align: center; color: red;'>⚠️ Data format error. Check console for details.</p>";
                         return;
                     }
@@ -634,17 +640,14 @@ if (openGlobalVaultBtn) {
                         return;
                     }
                     
-                    // Reverse the data so the newest photos show up first
                     memoryArray.reverse().forEach(memory => {
                         const name = memory["Name"] || "Anonymous";
                         const batch = memory["HSC Batch"] ? ` (Batch ${memory["HSC Batch"]})` : "";
                         const text = memory["The Memory / Story"] || "";
                         const photoUrl = memory["Upload your photo"] || "";
 
-                        // Skip empty rows
                         if (!text && !photoUrl) return;
 
-                        // Create the HTML for the card
                         const card = document.createElement("div");
                         card.className = "memory-card";
                         
