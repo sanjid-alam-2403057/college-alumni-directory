@@ -878,6 +878,50 @@ body.dark-mode .copy-number-btn:hover { background-color: #334155; color: white;
     #alumniMap {
         height: 280px !important; /* Shrinks the map from 450px to a better mobile size */
     }
+/* --- Fix for Map Popups being too big on Mobile --- */
+    
+    /* 1. Shrink the main Leaflet popup container */
+    .leaflet-popup-content {
+        margin: 8px !important; /* Reduces the default bulky margins */
+        min-width: 150px !important;
+    }
+    
+    .map-popup-container {
+        padding: 2px; /* Less padding inside the card */
+    }
+    
+    /* 2. Shrink the profile image inside the map */
+    .map-popup-img {
+        width: 35px !important;
+        height: 35px !important;
+        margin-bottom: 4px !important;
+        border-width: 1px !important;
+    }
+    
+    /* 3. Shrink the text (Name, Uni, Batch) */
+    .map-popup-name {
+        font-size: 0.9rem !important;
+        margin-bottom: 2px !important;
+    }
+    
+    .map-popup-uni {
+        font-size: 0.7rem !important;
+        line-height: 1.1 !important;
+        margin-bottom: 2px !important;
+    }
+    
+    .map-popup-batch, .map-popup-dev-badge {
+        font-size: 0.65rem !important;
+        padding: 2px 5px !important;
+        margin-bottom: 2px !important;
+    }
+    
+    /* 4. Shrink the QR Code box if you have one inside the map */
+    .qr-code-box {
+        padding: 2px !important;
+        transform: scale(0.85); /* Scales down the whole QR box cleanly */
+        margin: 0 !important;
+    }
 }
 
 /* =========================================
