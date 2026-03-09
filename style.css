@@ -880,16 +880,19 @@ body.dark-mode .copy-number-btn:hover { background-color: #334155; color: white;
     }
 /* --- Fix for Map Popups being too big on Mobile --- */
     
-    /* 1. Shrink the main Leaflet popup container */
+   /* 1. FORCE the main Leaflet popup container to be tiny */
+    .leaflet-popup-content-wrapper {
+        padding: 0 !important;
+        border-radius: 8px !important;
+    }
+    
     .leaflet-popup-content {
-        margin: 8px !important; /* Reduces the default bulky margins */
-        min-width: 150px !important;
+        margin: 4px !important; /* Extremely small margin */
+        width: 160px !important; /* Force a strict small width */
+        min-width: 160px !important;
+        line-height: 1.2 !important;
     }
-    
-    .map-popup-container {
-        padding: 2px; /* Less padding inside the card */
-    }
-    
+
     /* 2. Shrink the profile image inside the map */
     .map-popup-img {
         width: 35px !important;
