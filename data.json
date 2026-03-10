@@ -136,6 +136,21 @@
     "isPublic": true
   },
   {
+  "name": "Chaima Akter Nisa",
+  "university": "Jagannath University ",
+  "department": "Zoology",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/chaima.jpg",
+  "emailUser": "chaimauddinnisa",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1817921812",
+  "location": "Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
     "name": "Md Nazmuz Sakib",
     "university": "Jagannath University",
     "department": "Pharmacy",
