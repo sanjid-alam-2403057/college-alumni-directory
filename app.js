@@ -321,9 +321,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // --- SHARE PROFILE LOGIC ---
 window.shareProfile = function(buttonElement, name, institution) {
     const websiteUrl = window.location.href.split('?')[0]; 
-    const textToCopy = `Check out ${name} from ${institution} on our Alumni Directory! ${websiteUrl}`;
     
-    navigator.clipboard.writeText(textToCopy).then(() => {
+    // Write ONLY the URL to the clipboard
+    navigator.clipboard.writeText(websiteUrl).then(() => {
         const originalText = buttonElement.innerHTML;
         buttonElement.innerHTML = "✅ Copied!";
         buttonElement.classList.add("btn-success-state");
