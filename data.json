@@ -1,6 +1,36 @@
 
 [
    {
+  "name": "Fairoz Anika ",
+  "university": "Jessore Medical College ",
+  "department": "MBBS ",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/fairoz.jpg",
+  "emailUser": "fairoznourin7",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1604955231",
+  "location": "Jessore ",
+  "mentoring": true,
+  "isPublic": true
+},
+   {
+  "name": "Jidni Sami Sejuti ",
+  "university": "Cumilla Medical College ",
+  "department": "MBBS",
+  "admissionYear": 2025,
+  "hscBatch": 2025,
+  "photo": "images/tarin.png",
+  "emailUser": "jidnisamisejuti1",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1607601619",
+  "location": "Cumilla",
+  "mentoring": true,
+  "isPublic": true
+},
+   {
   "name": "Abdullah Al Jubayer",
   "university": "Eastern Medical College, Comilla",
   "department": "MBBS",
@@ -16,23 +46,7 @@
  
 },
 
-{
-  "name": "Jidni Sami Sejuti ",
-  "university": "Cumilla Medical College ",
-  "department": "MBBS",
-  "admissionYear": 2025,
-  "hscBatch": 2025,
-  "photo": "images/tarin.png",
-  "emailUser": "jidnisamisejuti1",
-  "emailDomain": "gmail.com",
-  "whatsappCode": "880",
-  "whatsappNum": "1607601619",
-  "location": "Cumilla",
-  "mentoring": true,
-  "isPublic": true
-},
-   
-  {
+   {
     "name": "Sanjid Alam",
     "university": "Rajshahi University of Engineering & Technology (RUET)",
     "department": "Computer Science and Engineering (CSE) ",
@@ -75,6 +89,37 @@
   "whatsappCode": "880",
   "whatsappNum": "1973304041",
   "location": "https://maps.app.goo.gl/nkELgfHqJVJd1MtV6?g_st=ic",
+  "mentoring": true,
+  "isPublic": true
+},
+{
+  "name": "MD.Habibur Rahman ",
+  "university": "Khulna University of Engineering & Technology (KUET)",
+  "department": "Leather Engineering (LE)",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/rafi.jpg",
+  "emailUser": "habibibur2006",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1331368710",
+  "location": "Fulbaria gate,Khulna",
+  "mentoring": true,
+  "isPublic": true
+},
+   
+   {
+  "name": "Tahmid Haider ",
+  "university": "Shahjalal University of Science and Technology (SUST)",
+  "department": "Petroleum and Mining Engineering",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/men.png",
+  "emailUser": "haidertahmid410",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1778912588",
+  "location": "Sylhet",
   "mentoring": true,
   "isPublic": true
 },
