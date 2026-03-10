@@ -15,21 +15,6 @@
     "isPublic": true
   },
   {
-    "name": "Jidni Sami Sejuti",
-    "university": "Cumilla Medical College",
-    "department": "MBBS",
-    "admissionYear": 2025,
-    "hscBatch": 2025,
-    "photo": "images/tarin.png",
-    "emailUser": "jidnisamisejuti1",
-    "emailDomain": "gmail.com",
-    "whatsappCode": "880",
-    "whatsappNum": "1607601619",
-    "location": "Cumilla",
-    "mentoring": true,
-    "isPublic": true
-  },
-  {
   "name": "Mst. Khadija Tull Kobra",
   "university": "Faridpur medical college ",
   "department": "MBBS",
@@ -58,6 +43,21 @@
     "location": "Kabila, Comilla, Bangladesh",
     "mentoring": true,
     "isPublic": false
+  },
+  {
+    "name": "Jidni Sami Sejuti",
+    "university": "Cumilla Medical College",
+    "department": "MBBS",
+    "admissionYear": 2026,
+    "hscBatch": 2025,
+    "photo": "images/tarin.png",
+    "emailUser": "jidnisamisejuti1",
+    "emailDomain": "gmail.com",
+    "whatsappCode": "880",
+    "whatsappNum": "1607601619",
+    "location": "Cumilla",
+    "mentoring": true,
+    "isPublic": true
   },
   {
     "name": "Sanjid Alam",
