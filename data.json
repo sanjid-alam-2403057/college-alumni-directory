@@ -30,6 +30,21 @@
     "isPublic": true
   },
   {
+  "name": "Mst. Khadija Tull Kobra",
+  "university": "Faridpur medical college ",
+  "department": "MBBS",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/women.pnj",
+  "emailUser": "khadijatul00001",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1622984894",
+  "location": "Faridpur ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
     "name": "Abdullah Al Jubayer",
     "university": "Eastern Medical College, Comilla",
     "department": "MBBS",
