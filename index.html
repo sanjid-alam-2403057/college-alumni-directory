@@ -52,7 +52,7 @@
         </div>
         
         <section class="search-container">
-            <input type="text" id="searchInput" placeholder="Search by name, institution, or batch...">
+            <input type="text" id="searchInput" placeholder="Search by name, institution, or batch..." aria-label="Search by name, institution, or batch">
         </section>
 
         <section class="sort-container">
@@ -138,7 +138,7 @@
     
     <div id="paymentModal" class="payment-modal">
         <div class="payment-modal-content">
-            <span id="closePaymentModal" class="close-payment-btn">&times;</span>
+            <span id="closePaymentModal" class="close-payment-btn" aria-label="Close">&times;</span>
             <h2>Support the Project ❤️</h2>
             <p style="margin-bottom: 20px; color: #64748b;">If this directory helped you reconnect, consider buying the developer a coffee!</p>
             
@@ -161,7 +161,7 @@
 
     <div id="memoryVaultModal" class="payment-modal"> 
         <div class="payment-modal-content vault-modal-content">
-            <span id="closeVaultModal" class="close-payment-btn">&times;</span>
+            <span id="closeVaultModal" class="close-payment-btn" aria-label="Close">&times;</span>
             <h2>📸 Memory Vault</h2>
             <p style="color: #64748b; margin-bottom: 20px;" id="vaultSubtitle">Throwback moments from the batch!</p>
             
@@ -180,8 +180,6 @@
         </div>
     </div>
 
-    <script src="app.js?v=20260310_v2"></script>
-    
     <div id="id-card-template" style="position: fixed; left: -9999px; top: 0; width: 320px; height: 500px; background: linear-gradient(135deg, #0a2540, #173d6b); color: white; border-radius: 16px; font-family: 'Poppins', sans-serif; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); overflow: hidden;">
         
         <div style="position: absolute; top: -50px; left: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 1;"></div>
@@ -219,5 +217,7 @@
              ✔️ Official Verified Member
         </div>
     </div>
+    
+    <script src="app.js?v=20260310_v2"></script>
 </body>
 </html>
