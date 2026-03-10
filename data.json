@@ -16,5 +16,20 @@
     "isPublic": true,
     "location": "Kazla, Rajshahi, Bangladesh",
     "isDeveloper": true
-  }
+  },
+     {
+  "name": "MD. MAHBUB ALAM ",
+  "university": "Rajshahi Nursing college ",
+  "department": "B.S.c in nursing ",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/shawon.jpeg",
+  "emailUser": "mahbubalamshawon4594",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1609488033",
+  "location": "Rajshahi ",
+  "mentoring": true,
+  "isPublic": true
+}
 ]
