@@ -124,14 +124,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 card.className = "alumni-card";
             }
             
-            // SMART LOGIC: Group vs Department
+            // ==========================================
+            // 🟢 FIXED SMART LOGIC: Exact match to fix the CSE bug
+            // ==========================================
             let studyLabel = "Department"; 
             let studyValue = alumnus.department || alumnus.group || "N/A"; 
-            let lowerStudy = studyValue.toLowerCase();
+            let lowerStudy = studyValue.toLowerCase().trim();
 
-            if (lowerStudy.includes("science") || lowerStudy.includes("commerce") || lowerStudy.includes("arts") || lowerStudy.includes("humanities") || lowerStudy.includes("business")) {
+            if (lowerStudy === "science" || lowerStudy === "commerce" || lowerStudy === "business studies" || lowerStudy === "arts" || lowerStudy === "humanities") {
                 studyLabel = "Group";
             }
+            // ==========================================
             
             const emailButton = (alumnus.emailUser && alumnus.emailDomain) ? 
                 `<button class="contact-btn" onclick="window.location.href='mailto:${alumnus.emailUser}@${alumnus.emailDomain}'">✉️ Email</button>` : "";
