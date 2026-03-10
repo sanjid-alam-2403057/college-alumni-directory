@@ -30,21 +30,6 @@
   "isPublic": true
 },
   {
-    "name": "Abdullah Al Jubayer",
-    "university": "Eastern Medical College, Comilla",
-    "department": "MBBS",
-    "admissionYear": 2025,
-    "hscBatch": 2024,
-    "photo": "images/azharul.png",
-    "emailUser": "ka7050643",
-    "emailDomain": "gmail.com",
-    "whatsappCode": "880",
-    "whatsappNum": "1736879754",
-    "location": "Kabila, Comilla, Bangladesh",
-    "mentoring": true,
-    "isPublic": false
-  },
-  {
     "name": "Jidni Sami Sejuti",
     "university": "Cumilla Medical College",
     "department": "MBBS",
@@ -59,6 +44,22 @@
     "mentoring": true,
     "isPublic": true
   },
+  {
+    "name": "Abdullah Al Jubayer",
+    "university": "Eastern Medical College, Comilla",
+    "department": "MBBS",
+    "admissionYear": 2025,
+    "hscBatch": 2024,
+    "photo": "images/azharul.png",
+    "emailUser": "ka7050643",
+    "emailDomain": "gmail.com",
+    "whatsappCode": "880",
+    "whatsappNum": "1736879754",
+    "location": "Kabila, Comilla, Bangladesh",
+    "mentoring": true,
+    "isPublic": false
+  },
+  
   {
     "name": "Sanjid Alam",
     "university": "Rajshahi University of Engineering & Technology (RUET)",
