@@ -166,6 +166,21 @@
     "isPublic": true
   },
   {
+  "name": "Tahmida Niger ",
+  "university": "Chittagong University ",
+  "department": "Physics ",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/tahmida.jpg",
+  "emailUser": "tahmidanigershawon",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1635135531",
+  "location": "Chittagong ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
     "name": "Md Asifur Rahman",
     "university": "University of Chittagong",
     "department": "Law",
