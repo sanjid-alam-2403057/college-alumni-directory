@@ -182,6 +182,21 @@
     "isPublic": true
   },
   {
+  "name": "Abdullah ",
+  "university": "University of Dhaka ",
+  "department": "Department of chemistry ",
+  "admissionYear": 2024,
+  "hscBatch": 2023,
+  "photo": "images/abdullah.jpg",
+  "emailUser": "abdullah-2023616677",
+  "emailDomain": "chem.du.ac.bd",
+  "whatsappCode": "880",
+  "whatsappNum": "1531739050",
+  "location": "Sahabag, Dhaka ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
   "name": "Chaima Akter Nisa",
   "university": "Jagannath University ",
   "department": "Zoology",
