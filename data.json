@@ -377,6 +377,21 @@
   "isPublic": true
 },
   {
+  "name": "Al amin Saoun",
+  "university": "Mosharraf Hossain Khan Chowdury Degree College ",
+  "department": "Management ",
+  "admissionYear": 2021,
+  "hscBatch": 2020,
+  "photo": "images/men.png",
+  "emailUser": "shawonalamin55",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1741015300",
+  "location": "Bramonpara, Cumilla",
+  "mentoring": true,
+  "isPublic": false
+},
+  {
   "name": "Raishul Samie",
   "university": "Sonar Bangla College",
   "department": "Management",
