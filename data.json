@@ -227,6 +227,21 @@
   "isPublic": true
 },
   {
+  "name": "Mahmudul Hasib Khan ",
+  "university": "University of Chittagong ",
+  "department": "Biochemistry And Molecular Biology ",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/men.png",
+  "emailUser": "mahmudulhasib660",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1825863028",
+  "location": "Chittagong ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
     "name": "Md Asifur Rahman",
     "university": "University of Chittagong",
     "department": "Law",
