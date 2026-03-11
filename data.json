@@ -25,7 +25,7 @@
   "emailDomain": "gmail.com",
   "whatsappCode": "880",
   "whatsappNum": "1622984894",
-  "location": "Faridpur ",
+  "location": "Faridpur",
   "mentoring": true,
   "isPublic": true
 },
@@ -40,7 +40,7 @@
     "emailDomain": "gmail.com",
     "whatsappCode": "880",
     "whatsappNum": "1607601619",
-    "location": "Cumilla",
+    "location": "Cumilla, Bangladesh",
     "mentoring": true,
     "isPublic": true
   },
@@ -55,7 +55,7 @@
     "emailDomain": "gmail.com",
     "whatsappCode": "880",
     "whatsappNum": "1736879754",
-    "location": "Kabila, Comilla, Bangladesh",
+    "location": "Comilla, Bangladesh",
     "mentoring": true,
     "isPublic": false
   },
@@ -70,7 +70,7 @@
   "emailDomain": "gmail.com",
   "whatsappCode": "880",
   "whatsappNum": "1612053445",
-  "location": "Polashi, Dhaka. ",
+  "location": "Polashi, Dhaka, Bangladesh",
   "mentoring": true,
   "isPublic": true
 },
@@ -85,9 +85,9 @@
   "emailDomain": "gmail.com",
   "whatsappCode": "880",
   "whatsappNum": "1739258379",
-  "location": "408/1 ( Old KA 66/1), Kuratoli, Khilkhet, Dhaka-1229,Bangladesh ",
+  "location": "Khilkhet, Dhaka,Bangladesh ",
   "mentoring": true,
-  "isPublic": true
+  "isPublic": false
 },
   {
   "name": "Md. Sifat Al Hojaifa",
@@ -100,7 +100,7 @@
   "emailDomain": "gmail.com",
   "whatsappCode": "880",
   "whatsappNum": "1734560821",
-  "location": "Gazipur, Dhaka",
+  "location": "Gazipur, Dhaka, Bangladesh",
   "mentoring": true,
   "isPublic": true
 },
@@ -115,7 +115,7 @@
   "emailDomain": "gmail.com",
   "whatsappCode": "880",
   "whatsappNum": "1811327091",
-  "location": "Sontosh, Tangail.",
+  "location": "Sontosh, Tangail, Bangladesh",
   "mentoring": true,
   "isPublic": true
 },
@@ -162,7 +162,7 @@
   "emailDomain": "gmail.com",
   "whatsappCode": "880",
   "whatsappNum": "1571211103",
-  "location": "Chittagong ",
+  "location": "Chittagong, Bangladesh",
   "mentoring": true,
   "isPublic": true
 },
@@ -177,9 +177,9 @@
     "emailDomain": "gmail.com",
     "whatsappCode": "880",
     "whatsappNum": "1973304041",
-    "location": "Dhaka",
+    "location": "Dhaka, Bangladesh",
     "mentoring": true,
-    "isPublic": true
+    "isPublic": false
   },
   {
     "name": "MD. Habibur Rahman",
@@ -192,7 +192,7 @@
     "emailDomain": "gmail.com",
     "whatsappCode": "880",
     "whatsappNum": "1331368710",
-    "location": "Fulbaria gate, Khulna",
+    "location": "Khulna, Bangladesh",
     "mentoring": true,
     "isPublic": true
   },
@@ -207,7 +207,7 @@
   "emailDomain": "gmail.com",
   "whatsappCode": "880",
   "whatsappNum": "1309566335",
-  "location": "Dinajpur ",
+  "location": "Dinajpur, Bangladesh",
   "mentoring": true,
   "isPublic": true
 },
@@ -222,7 +222,7 @@
     "emailDomain": "gmail.com",
     "whatsappCode": "880",
     "whatsappNum": "1778912588",
-    "location": "Sylhet",
+    "location": "Sylhet, Bangladesh",
     "mentoring": true,
     "isPublic": true
   },
@@ -252,7 +252,7 @@
   "emailDomain": "chem.du.ac.bd",
   "whatsappCode": "880",
   "whatsappNum": "1531739050",
-  "location": "Sahabag, Dhaka ",
+  "location": "Sahabag, Dhaka, Bangladesh",
   "mentoring": true,
   "isPublic": true
 },
@@ -267,7 +267,7 @@
   "emailDomain": "gmail.com",
   "whatsappCode": "880",
   "whatsappNum": "1817921812",
-  "location": "Dhaka",
+  "location": "Dhaka, Bangladesh",
   "mentoring": true,
   "isPublic": true
 },
@@ -282,7 +282,7 @@
     "emailDomain": "gmail.com",
     "whatsappCode": "880",
     "whatsappNum": "1852060975",
-    "location": "Puran Dhaka, Sadarghat, Dhaka",
+    "location": "Sadarghat, Dhaka, Bangladesh",
     "mentoring": true,
     "isPublic": true
   },
@@ -297,7 +297,7 @@
   "emailDomain": "gmail.com",
   "whatsappCode": "880",
   "whatsappNum": "1635135531",
-  "location": "Chittagong ",
+  "location": "Chittagong, Bangladesh",
   "mentoring": true,
   "isPublic": true
 },
@@ -312,7 +312,7 @@
   "emailDomain": "gmail.com",
   "whatsappCode": "880",
   "whatsappNum": "1825863028",
-  "location": "Chittagong ",
+  "location": "Chittagong, Bangladesh",
   "mentoring": true,
   "isPublic": true
 },
@@ -342,7 +342,7 @@
   "emailDomain": "gmail.com",
   "whatsappCode": "880",
   "whatsappNum": "1883733210",
-  "location": "Rajshahi ",
+  "location": "Rajshahi, Bangladesh",
   "mentoring": true,
   "isPublic": true
 },
@@ -357,7 +357,7 @@
     "emailDomain": "gmail.com",
     "whatsappCode": "880",
     "whatsappNum": "1595367568",
-    "location": "Chattogram",
+    "location": "Chattogram, Bangladesh",
     "mentoring": true,
     "isPublic": true
   },
@@ -372,7 +372,7 @@
   "emailDomain": "gmail.com",
   "whatsappCode": "880",
   "whatsappNum": "1786470668",
-  "location": "Cumilla ",
+  "location": "Cumilla, Bangladesh",
   "mentoring": false,
   "isPublic": true
 },
@@ -387,7 +387,7 @@
   "emailDomain": "gmail.com",
   "whatsappCode": "880",
   "whatsappNum": "1883202409",
-  "location": "Govindupur, Burichang, Comilla",
+  "location": "Burichang, Comilla, Bangladesh",
   "mentoring": false,
   "isPublic": false
 }
