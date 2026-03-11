@@ -285,5 +285,35 @@
     "location": "Chattogram",
     "mentoring": true,
     "isPublic": true
-  }
+  },
+  {
+  "name": "Shahadat Hossain ",
+  "university": "Cumilla University ",
+  "department": "Anthropology ",
+  "admissionYear": 2026,
+  "hscBatch": 2025,
+  "photo": "images/men.png",
+  "emailUser": "sajitshahadat",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1786470668",
+  "location": "Cumilla ",
+  "mentoring": false,
+  "isPublic": true
+},
+  {
+  "name": "Raishul Samie",
+  "university": "Sonar Bangla College",
+  "department": "Management",
+  "admissionYear": 2023,
+  "hscBatch": 2023,
+  "photo": "images/samie.png",
+  "emailUser": "raishulsamie",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1883202409",
+  "location": "Govindupur, Burichang, Comilla",
+  "mentoring": false,
+  "isPublic": false
+}
 ]
