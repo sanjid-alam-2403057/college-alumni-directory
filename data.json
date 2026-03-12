@@ -119,7 +119,21 @@
   "mentoring": true,
   "isPublic": true
 },
-  
+  {
+  "name": "Fahim Shahriar",
+  "university": "Patuakhali Science & Technology University",
+  "department": "Doctor of Veterinary Medicine",
+  "admissionYear": 2023,
+  "hscBatch": 2022,
+  "photo": "images/Shahriar.jpg",
+  "emailUser": "fahim3076s",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1325972979",
+  "location": "Patuakhali,Barishal,Bangladesh",
+  "mentoring": true,
+  "isPublic": true
+},
   {
     "name": "Sanjid Alam",
     "university": "Rajshahi University of Engineering & Technology (RUET)",
