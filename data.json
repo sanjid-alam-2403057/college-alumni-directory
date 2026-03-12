@@ -271,6 +271,21 @@
   "isPublic": true
 },
   {
+  "name": "Shanzida Tasmim Tithi",
+  "university": "University of Dhaka",
+  "department": "Fisheries ",
+  "admissionYear": 2026,
+  "hscBatch": 2025,
+  "photo": "images/Tithi.png",
+  "emailUser": "sanjidatasmimtithi",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1613882996",
+  "location": "Dhaka",
+  "mentoring": false,
+  "isPublic": true
+},
+  {
   "name": "Chaima Akter Nisa",
   "university": "Jagannath University ",
   "department": "Zoology",
