@@ -286,6 +286,21 @@
   "isPublic": true
 },
   {
+  "name": "Nusrat Jahan Niha ",
+  "university": "Jagannath University ",
+  "department": "English ",
+  "admissionYear": 2024,
+  "hscBatch": 2023,
+  "photo": "images/Niha.jpg",
+  "emailUser": "nustarjahanniha",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1707501614",
+  "location": "Jonshon road, Puran Dhaka ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
   "name": "Chaima Akter Nisa",
   "university": "Jagannath University ",
   "department": "Zoology",
@@ -315,6 +330,21 @@
     "mentoring": true,
     "isPublic": true
   },
+  {
+  "name": "Jobayer Hossain",
+  "university": "University of Rajshahi ",
+  "department": "Finance ",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/jobayer.png",
+  "emailUser": "jobayercum",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1883733210",
+  "location": "Rajshahi, Bangladesh",
+  "mentoring": true,
+  "isPublic": true
+},
   {
   "name": "Tahmida Niger ",
   "university": "Chittagong University ",
@@ -361,21 +391,6 @@
     "isPublic": true
   },
   {
-  "name": "Jobayer Hossain",
-  "university": "University of Rajshahi ",
-  "department": "Finance ",
-  "admissionYear": 2025,
-  "hscBatch": 2024,
-  "photo": "images/jobayer.png",
-  "emailUser": "jobayercum",
-  "emailDomain": "gmail.com",
-  "whatsappCode": "880",
-  "whatsappNum": "1883733210",
-  "location": "Rajshahi, Bangladesh",
-  "mentoring": true,
-  "isPublic": true
-},
-  {
     "name": "Md Tajul Islam",
     "university": "University of Chittagong",
     "department": "Mathematics",
@@ -390,6 +405,21 @@
     "mentoring": true,
     "isPublic": true
   },
+  {
+  "name": "JUNAYED ISLAM",
+  "university": "UNIVERSITY OF BARISHAL ",
+  "department": "Accounting & information systems",
+  "admissionYear": 2024,
+  "hscBatch": 2023,
+  "photo": "images/JUNAYED.jpg",
+  "emailUser": "junayedislam618",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1831323974",
+  "location": "Barishal",
+  "mentoring": true,
+  "isPublic": true
+},
   {
   "name": "Shahadat Hossain ",
   "university": "Cumilla University ",
