@@ -1,5 +1,20 @@
 [
   {
+  "name": "Kazi Razaul Hoque Nahian ",
+  "university": "Sir Salimullah Medical College ",
+  "department": "MBBS ",
+  "admissionYear": 2026,
+  "hscBatch": 2025,
+  "photo": "images/Nahian.jpg",
+  "emailUser": "kazinahian44",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1751427664",
+  "location": "Dhaka ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
     "name": "Fairoz Anika",
     "university": "Jessore Medical College",
     "department": "MBBS",
