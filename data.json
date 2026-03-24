@@ -15,6 +15,21 @@
   "isPublic": true
 },
   {
+  "name": "Mst Israt Zahan ",
+  "university": "Shaheed Suhrawardy Medical College ",
+  "department": "BDS",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/Israt.jpg",
+  "emailUser": "evaisrat221",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1621013514",
+  "location": "Sher-E-Bangla Nagar, Mohammadpur, Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
     "name": "Fairoz Anika",
     "university": "Jessore Medical College",
     "department": "MBBS",
@@ -255,6 +270,21 @@
     "mentoring": true,
     "isPublic": false
   },
+  {
+  "name": "Md Rahatil Ashikin",
+  "university": "Saxion university of applied science",
+  "department": "CSE",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/Rahatil.jpeg",
+  "emailUser": "ashikinrahatil09",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1767159405",
+  "location": "NETHARLANDS",
+  "mentoring": true,
+  "isPublic": true
+},
   {
     "name": "MD. Habibur Rahman",
     "university": "Khulna University of Engineering & Technology (KUET)",
