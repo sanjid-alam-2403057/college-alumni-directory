@@ -210,6 +210,21 @@
   "isPublic": true
 },
   {
+  "name": "Md Imtiaj Sarker ",
+  "university": "BUET",
+  "department": "Civil Engineering",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/imtiaj.jpg",
+  "emailUser": "imtiajsarkar86",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1603904277",
+  "location": "Polashi, Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
     "name": "Sanjid Alam",
     "university": "Rajshahi University of Engineering & Technology (RUET)",
     "department": "Computer Science and Engineering (CSE)",
@@ -357,6 +372,21 @@
   "whatsappCode": "880",
   "whatsappNum": "1531739050",
   "location": "Dhaka, Bangladesh",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
+  "name": "Rabbi Mohammad Afridi",
+  "university": "Dhaka University",
+  "department": "English for speakers of other language(ESOL)",
+  "admissionYear": 2026,
+  "hscBatch": 2025,
+  "photo": "images/Rabbi.jpg",
+  "emailUser": "afridirabbi9",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1408983934",
+  "location": "Dhaka",
   "mentoring": true,
   "isPublic": true
 },
