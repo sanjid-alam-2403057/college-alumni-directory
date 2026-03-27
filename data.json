@@ -376,6 +376,21 @@
   "isPublic": true
 },
   {
+  "name": "MD. Rafiul Alam ",
+  "university": "University of Dhaka ",
+  "department": "Department of Economics ",
+  "admissionYear": 2026,
+  "hscBatch": 2025,
+  "photo": "images/default.jpg",
+  "emailUser": "padkha18",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1955-574149",
+  "location": "Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
   "name": "Rabbi Mohammad Afridi",
   "university": "Dhaka University",
   "department": "English for speakers of other language(ESOL)",
