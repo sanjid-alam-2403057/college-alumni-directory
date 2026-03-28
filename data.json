@@ -1,5 +1,20 @@
 [
   {
+  "name": "Numan Arafat ",
+  "university": "Sir Salimullah Medical College ",
+  "department": "MBBS",
+  "admissionYear": 2024,
+  "hscBatch": 2023,
+  "photo": "images/Arafat.jpeg",
+  "emailUser": "arafatnuman330",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1606593618",
+  "location": "Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
   "name": "Kazi Razaul Hoque Nahian ",
   "university": "Sir Salimullah Medical College ",
   "department": "MBBS ",
@@ -60,6 +75,51 @@
   "isPublic": true
 },
   {
+  "name": "Antor Chandra Paul ",
+  "university": "Faridpur Medical College ",
+  "department": "MBBS",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/Antor.jpg",
+  "emailUser": "antorpaul4031",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1760078288",
+  "location": "Faridpur, Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
+  "name": "Tarikul Islam Bhuiyan ",
+  "university": "Cumilla Medical College ",
+  "department": "MBBS",
+  "admissionYear": 2023,
+  "hscBatch": 2022,
+  "photo": "images/Tarikul.jpeg",
+  "emailUser": "tarikulbhuiyan21",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1732551179",
+  "location": "Kuchaitoli, Cumilla",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
+  "name": "Md.AriFul Islam",
+  "university": "Comilla Medical College ",
+  "department": "MBBS",
+  "admissionYear": 2024,
+  "hscBatch": 2023,
+  "photo": "images/AriFul.jpg",
+  "emailUser": "mdarif45ul",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1737951612",
+  "location": "Comilla ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
     "name": "Jidni Sami Sejuti",
     "university": "Cumilla Medical College",
     "department": "MBBS",
@@ -101,6 +161,21 @@
   "whatsappCode": "880",
   "whatsappNum": "1823066907",
   "location": "Chattogram",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
+  "name": "ABM SIYAM HOSEN",
+  "university": "Shaheed Ziaur Rahman Medical College ",
+  "department": "MBBS",
+  "admissionYear": 2024,
+  "hscBatch": 2023,
+  "photo": "images/ABM.jpg",
+  "emailUser": "abmsiyam2",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1731435081",
+  "location": "Bogura",
   "mentoring": true,
   "isPublic": true
 },
@@ -210,6 +285,21 @@
   "isPublic": true
 },
   {
+  "name": "Tanvir Ahmed Bhuiyan",
+  "university": "Bangladesh University of Engineering and Technology (BUET)",
+  "department": "EEE",
+  "admissionYear": 2022,
+  "hscBatch": 2023,
+  "photo": "images/Tanvir.jpeg",
+  "emailUser": "tanvirahmedbhuiyan197",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1867859207",
+  "location": "Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
   "name": "Md Imtiaj Sarker ",
   "university": "Bangladesh University of Engineering and Technology (BUET)",
   "department": "Civil Engineering",
@@ -286,6 +376,21 @@
     "isPublic": false
   },
   {
+  "name": "Md Abu Sahil",
+  "university": "Holmes Institute ",
+  "department": "Information Technology ",
+  "admissionYear": 2025,
+  "hscBatch": 2023,
+  "photo": "images/Abu.jpeg",
+  "emailUser": "abusahil9921",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "+61414240983",
+  "location": "Sydney, Australia ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
   "name": "Md Rahatil Ashikin",
   "university": "Saxion university of applied science",
   "department": "CSE",
@@ -315,6 +420,36 @@
     "mentoring": true,
     "isPublic": true
   },
+  {
+  "name": "Md Anamul Haque Shuvo ",
+  "university": "Chittagong University of Engineering Technology  ",
+  "department": "MME",
+  "admissionYear": 2021,
+  "hscBatch": 2021,
+  "photo": "images/ANAMUL.png",
+  "emailUser": "anamul.cuet.mme",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1859576988",
+  "location": "Chittagong ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
+  "name": "Anika Tasnim ",
+  "university": "Military Institute of Science and Technology ",
+  "department": "Civil Engineering ",
+  "admissionYear": 2024,
+  "hscBatch": 2023,
+  "photo": "images/Anika.jpg",
+  "emailUser": "anika.abc7",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1585003076",
+  "location": "Mirpur 12",
+  "mentoring": true,
+  "isPublic": true
+},
   {
   "name": "Md Ismail Hossain Patuary ",
   "university": "Hajee Mohammad Danesh Science and Technology University ",
@@ -346,6 +481,51 @@
     "isPublic": true
   },
   {
+  "name": "Sadia Jaman Shukriya ",
+  "university": "Noakhali Science and Technology University ",
+  "department": "Computer Science and Telecommunication Engineering",
+  "admissionYear": 2024,
+  "hscBatch": 2023,
+  "photo": "images/women.png",
+  "emailUser": "sadiajaman927",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1627229768",
+  "location": "Noakhali ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
+  "name": "MD Mamunur Rashid Buyan",
+  "university": "Noakhali Science & Technology University ",
+  "department": "Applied Chemistry & Chemical Engineering ",
+  "admissionYear": 2024,
+  "hscBatch": 2023,
+  "photo": "images/Mamunur.jpg",
+  "emailUser": "hashibmr14",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1877995368",
+  "location": "Noakhali, Sonapur",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
+  "name": "MOHAMMAD ARAFAT ZAMAN ",
+  "university": "Barishal Textile Engineering College, Barishal ",
+  "department": "Yarn Engineering ",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/ZAMAN.jpg",
+  "emailUser": "mohammadarafatzaman",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1884135786",
+  "location": "C and B road Barishal ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
     "name": "MD. MAHBUB ALAM",
     "university": "Rajshahi Nursing College",
     "department": "BSc in Nursing",
@@ -376,6 +556,21 @@
   "isPublic": true
 },
   {
+  "name": "Md Rayhan Alam ",
+  "university": "University Of Dhaka ",
+  "department": "Theoretical Physics ",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/Rayhan.jpg",
+  "emailUser": "mdrayhan421325",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1825029355",
+  "location": "Dhaka ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
   "name": "MD. Rafiul Alam ",
   "university": "University of Dhaka ",
   "department": "Department of Economics ",
@@ -390,6 +585,7 @@
   "mentoring": true,
   "isPublic": true
 },
+  
   {
   "name": "Rabbi Mohammad Afridi",
   "university": "Dhaka University",
@@ -405,6 +601,7 @@
   "mentoring": true,
   "isPublic": true
 },
+  
   {
   "name": "Shanzida Tasmim Tithi",
   "university": "University of Dhaka",
@@ -421,8 +618,38 @@
   "isPublic": true
 },
   {
+  "name": "Md.Siam Al Sami",
+  "university": "University of Dhaka ",
+  "department": "Department of Linguistics ",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/men.png",
+  "emailUser": "siamalsami5001",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1812887979",
+  "location": "Shahbagh, Dhaka-1000",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
+  "name": "Md. Shahariar Hasan",
+  "university": "University of Dhaka ",
+  "department": "Sociology ",
+  "admissionYear": 2025,
+  "hscBatch": 2025,
+  "photo": "images/Shahariar.jpg",
+  "emailUser": "mdshahariarhasan599",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1723876705",
+  "location": "Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
   "name": "Nusrat Jahan Niha ",
-  "university": "Jagannath University ",
+  "university": "Jagannath University",
   "department": "English ",
   "admissionYear": 2024,
   "hscBatch": 2023,
@@ -437,7 +664,7 @@
 },
   {
   "name": "Chaima Akter Nisa",
-  "university": "Jagannath University ",
+  "university": "Jagannath University",
   "department": "Zoology",
   "admissionYear": 2025,
   "hscBatch": 2024,
@@ -465,6 +692,21 @@
     "mentoring": true,
     "isPublic": true
   },
+  {
+  "name": "Kaspriya",
+  "university": "Jahangirnagar University ",
+  "department": "Physics ",
+  "admissionYear": 2025,
+  "hscBatch": 2023,
+  "photo": "images/Kaspriya.jpg",
+  "emailUser": "kamalkaspriya",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1766855565",
+  "location": "Savar,Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
   {
   "name": "Jobayer Hossain",
   "university": "University of Rajshahi ",
@@ -541,6 +783,21 @@
     "isPublic": true
   },
   {
+  "name": "Tasfia islam tonni",
+  "university": "Gazipur agricultural University ",
+  "department": "Agriculture faculty",
+  "admissionYear": 2024,
+  "hscBatch": 2023,
+  "photo": "images/default.jpg",
+  "emailUser": "fatashimfiya2023",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1823130560",
+  "location": "Gazipur,dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
   "name": "JUNAYED ISLAM",
   "university": "UNIVERSITY OF BARISHAL ",
   "department": "Accounting & information systems",
@@ -568,6 +825,21 @@
   "whatsappNum": "1786470668",
   "location": "Cumilla, Bangladesh",
   "mentoring": false,
+  "isPublic": true
+},
+  {
+  "name": "MD Shazzad Hossain ",
+  "university": "Cumilla Victoria govt university college ",
+  "department": "Statistics ",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/men.png",
+  "emailUser": "sshazzad158168",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1944609794",
+  "location": "Cumilla ",
+  "mentoring": true,
   "isPublic": true
 },
   {
