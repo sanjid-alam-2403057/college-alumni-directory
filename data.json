@@ -61,7 +61,7 @@
   },
   {
   "name": "Mst. Khadija Tull Kobra",
-  "university": "Faridpur medical college",
+"university": "Faridpur Medical College",
   "department": "MBBS",
   "admissionYear": 2025,
   "hscBatch": 2024,
@@ -166,7 +166,7 @@
 },
   {
   "name": "ABM SIYAM HOSEN",
-  "university": "Shaheed Ziaur Rahman Medical College ",
+  "university": "Shaheed Ziaur Rahman Medical College",
   "department": "MBBS",
   "admissionYear": 2024,
   "hscBatch": 2023,
@@ -422,7 +422,7 @@
   },
   {
   "name": "Md Anamul Haque Shuvo ",
-  "university": "Chittagong University of Engineering Technology  ",
+ "university": "Chittagong University of Engineering and Technology (CUET)",
   "department": "MME",
   "admissionYear": 2021,
   "hscBatch": 2021,
@@ -497,7 +497,7 @@
 },
   {
   "name": "MD Mamunur Rashid Buyan",
-  "university": "Noakhali Science & Technology University ",
+   "university": "Noakhali Science and Technology University ",
   "department": "Applied Chemistry & Chemical Engineering ",
   "admissionYear": 2024,
   "hscBatch": 2023,
@@ -557,7 +557,7 @@
 },
   {
   "name": "Md Rayhan Alam ",
-  "university": "University Of Dhaka ",
+  "university": "University of Dhaka ",
   "department": "Theoretical Physics ",
   "admissionYear": 2025,
   "hscBatch": 2024,
@@ -572,7 +572,7 @@
 },
   {
   "name": "MD. Rafiul Alam ",
-  "university": "University of Dhaka ",
+ "university": "University of Dhaka ",
   "department": "Department of Economics ",
   "admissionYear": 2026,
   "hscBatch": 2025,
@@ -588,7 +588,7 @@
   
   {
   "name": "Rabbi Mohammad Afridi",
-  "university": "Dhaka University",
+ "university": "University of Dhaka ",
   "department": "English for speakers of other language(ESOL)",
   "admissionYear": 2026,
   "hscBatch": 2025,
@@ -604,7 +604,7 @@
   
   {
   "name": "Shanzida Tasmim Tithi",
-  "university": "University of Dhaka",
+ "university": "University of Dhaka ",
   "department": "Fisheries ",
   "admissionYear": 2026,
   "hscBatch": 2025,
@@ -724,7 +724,7 @@
 },
   {
   "name": "Tahmida Niger ",
-  "university": "Chittagong University ",
+  "university": "University of Chittagong ",
   "department": "Physics ",
   "admissionYear": 2025,
   "hscBatch": 2024,
@@ -754,7 +754,7 @@
 },
   {
     "name": "Md Asifur Rahman",
-    "university": "University of Chittagong",
+   "university": "University of Chittagong ",
     "department": "Law",
     "admissionYear": 2025,
     "hscBatch": 2024,
@@ -769,7 +769,7 @@
   },
   {
     "name": "Md Tajul Islam",
-    "university": "University of Chittagong",
+  "university": "University of Chittagong ",
     "department": "Mathematics",
     "admissionYear": 2026,
     "hscBatch": 2025,
