@@ -361,6 +361,21 @@
   "isPublic": true
 },
   {
+  "name": "Irfanul Haque Mahat",
+  "university": "International University of Business Agriculture & Technology (IUBAT) ",
+  "department": "Civil Engineering ",
+  "admissionYear": 2025,
+  "hscBatch": 2023,
+  "photo": "images/Irfanul.jpg",
+  "emailUser": "irfanulhaquemahat",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1922493522",
+  "location": "Sector 10, Uttara, Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
     "name": "Mohammed Arafat",
     "university": "Ahsanullah University of Science and Technology (AUST)",
     "department": "Computer Science and Engineering (CSE)",
@@ -618,6 +633,21 @@
   "isPublic": true
 },
   {
+  "name": "Sakib Ahsan",
+"university": "University of Dhaka ",
+  "department": "Soil,water and Environment ",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/Sakib.jpg",
+  "emailUser": "sakib787n",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1618730666",
+  "location": "Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
   "name": "Md.Siam Al Sami",
   "university": "University of Dhaka ",
   "department": "Department of Linguistics ",
@@ -794,6 +824,21 @@
   "whatsappCode": "880",
   "whatsappNum": "1823130560",
   "location": "Gazipur,dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
+  "name": "Khalad bin walid ",
+  "university": "Bangladesh Agricultural University ",
+  "department": "Agricultural Economics & Rural Sociology",
+  "admissionYear": 2024,
+  "hscBatch": 2023,
+  "photo": "images/Khalad.jpg",
+  "emailUser": "khaladbinwalid50",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1863348674",
+  "location": "Mymensingh",
   "mentoring": true,
   "isPublic": true
 },
