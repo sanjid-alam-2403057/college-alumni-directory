@@ -663,6 +663,37 @@
   "isPublic": true
 },
   {
+  "name": "Mst. Monawara Islam Milli",
+  "university": "University of Dhaka ",
+  "department": "Department of History",
+  "admissionYear": 2026,
+  "hscBatch": 2025,
+  "photo": "images/Monawara.jpg",
+  "emailUser": "monawaramilli",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1987515486",
+  "location": "Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
+  "name": "Mst. Jannatul Ferdous ",
+   "university": "University of Dhaka ",
+  "department": "History ",
+  "admissionYear": 2026,
+  "hscBatch": 2025,
+  "photo": "images/Jannatul.jpeg",
+  "emailUser": "jf708117",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1522107339",
+  "location": "Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  
+  {
   "name": "Md. Shahariar Hasan",
   "university": "University of Dhaka ",
   "department": "Sociology ",
@@ -734,6 +765,21 @@
   "whatsappCode": "880",
   "whatsappNum": "1766855565",
   "location": "Savar,Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
+  "name": "Naznin Sultana ",
+  "university": "Jahangirnagar University ",
+  "department": "Zoology ",
+  "admissionYear": 2024,
+  "hscBatch": 2023,
+  "photo": "images/Naznin.jpg",
+  "emailUser": "nazninsultana4649",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1331804455",
+  "location": "Savar",
   "mentoring": true,
   "isPublic": true
 },
@@ -824,6 +870,21 @@
   "whatsappCode": "880",
   "whatsappNum": "1823130560",
   "location": "Gazipur,dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
+  "name": "Rasel ",
+ "university": "Gazipur agricultural University ",
+  "department": "Faculty of fisheries ",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/Rasel.jpg",
+  "emailUser": "sumon157485",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1742063959",
+  "location": "Gazipur, Dhaka ",
   "mentoring": true,
   "isPublic": true
 },
