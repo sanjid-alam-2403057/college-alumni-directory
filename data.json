@@ -949,6 +949,21 @@
   "isPublic": true
 },
   {
+  "name": "Khandaker Jabir Hossain ",
+  "university": "Sonargaon University, Dhaka",
+  "department": "CSE",
+  "admissionYear": 2026,
+  "hscBatch": 2025,
+  "photo": "images/Khandaker.jpg",
+  "emailUser": "kh.jabir.580",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1890438074",
+  "location": "Panthapath, Dhaka ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
   "name": "Al amin Saoun",
   "university": "Mosharraf Hossain Khan Chowdury Degree College ",
   "department": "Management ",
