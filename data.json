@@ -376,6 +376,21 @@
   "isPublic": true
 },
   {
+  "name": "Jobayer Sarkar saim",
+ "university": "International University of Business Agriculture & Technology (IUBAT) ",
+  "department": "Civil Engineering ",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/Jobayersarkar.jpg",
+  "emailUser": "saimjobayersarkar",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1889874539",
+  "location": "Uttara, Dhaka",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
     "name": "Mohammed Arafat",
     "university": "Ahsanullah University of Science and Technology (AUST)",
     "department": "Computer Science and Engineering (CSE)",
@@ -435,6 +450,24 @@
     "mentoring": true,
     "isPublic": true
   },
+  {
+  "name": "Md Rakibul Hasan Mazumder ",
+  "university": "Khulna University of Engineering & Technology (KUET)",
+  "department": "Textile Engineering ",
+  "admissionYear": 2026,
+  "hscBatch": 2025,
+  "photo": "images/Rakibul.jpg",
+  "emailUser": "rahama2994",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1332392994",
+  "location": "Khulna",
+  "mentoring": true,
+  "isPublic": true
+},
+
+
+  
   {
   "name": "Md Anamul Haque Shuvo ",
  "university": "Chittagong University of Engineering and Technology (CUET)",
