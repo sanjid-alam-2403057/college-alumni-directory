@@ -391,6 +391,21 @@
   "isPublic": true
 },
   {
+  "name": "Rupam Debnath",
+ "university": "International University of Business Agriculture & Technology (IUBAT) ",
+  "department": "BCSE",
+  "admissionYear": 2025,
+  "hscBatch": 2024,
+  "photo": "images/Rupam.jpeg",
+  "emailUser": "debnathrupam0186920",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1740575582",
+  "location": "Uttara",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
     "name": "Mohammed Arafat",
     "university": "Ahsanullah University of Science and Technology (AUST)",
     "department": "Computer Science and Engineering (CSE)",
@@ -453,7 +468,7 @@
   {
   "name": "Md Rakibul Hasan Mazumder ",
   "university": "Khulna University of Engineering & Technology (KUET)",
-  "department": "Textile Engineering ",
+  "department": "Building Engineering and Construction Management (BECM) ",
   "admissionYear": 2026,
   "hscBatch": 2025,
   "photo": "images/Rakibul.jpg",
@@ -832,6 +847,21 @@
   "isPublic": true
 },
   {
+  "name": "Mehedi Hasnat Nirob ",
+  "university": "University of Rajshahi ",
+  "department": "Physics ",
+  "admissionYear": 2026,
+  "hscBatch": 2025,
+  "photo": "images/Nirob.HEIC",
+  "emailUser": "mehedihasnatnirob",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1612171941",
+  "location": "Rajshahi ",
+  "mentoring": true,
+  "isPublic": true
+},
+  {
   "name": "Tahmida Niger ",
   "university": "University of Chittagong ",
   "department": "Physics ",
@@ -935,6 +965,20 @@
   "location": "Mymensingh",
   "mentoring": true,
   "isPublic": true
+},{
+  "name": "Salman Sarker",
+  "university": "Canadian University Of Bangladesh ",
+  "department": "BBA",
+  "admissionYear": 2026,
+  "hscBatch": 2024,
+  "photo": "images/Salman.jpg",
+  "emailUser": "salmansarkar431",
+  "emailDomain": "gmail.com",
+  "whatsappCode": "880",
+  "whatsappNum": "1924275901",
+  "location": "Middle Badda",
+  "mentoring": true,
+  "isPublic": false
 },
   {
   "name": "JUNAYED ISLAM",
